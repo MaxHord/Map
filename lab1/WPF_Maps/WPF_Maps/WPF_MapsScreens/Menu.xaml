@@ -1,0 +1,89 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_2_Name"
+	x:Class="WPF_MapsScreens.Screen_2"
+	Width="400" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="{DynamicResource BaseBackground-Sketch}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.2*"/>
+			<RowDefinition Height="0.133*"/>
+			<RowDefinition Height="0.134*"/>
+			<RowDefinition Height="0.133*"/>
+			<RowDefinition Height="0.133*"/>
+			<RowDefinition Height="0.134*"/>
+			<RowDefinition Height="0.133*"/>
+		</Grid.RowDefinitions>
+		<Rectangle Fill="{StaticResource BaseForeground-Sketch}" Stroke="Black" Opacity="0.6" Grid.RowSpan="7"/>
+		<Image HorizontalAlignment="Left" Margin="24,28.8,0,0" VerticalAlignment="Top" Width="24" Height="24" Source="left-arrow-key.png" Stretch="Fill">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Image>
+		<TextBlock Margin="80,0,0,0" Style="{StaticResource TextBlock-Sketch}" FontFamily="Fonts/#Segoe Marker" FontSize="26.667" FontWeight="Bold" Foreground="#F0EFF4F5" Text="Отчистить данные" HorizontalAlignment="Left" Width="240" VerticalAlignment="Bottom" Grid.Row="3"/>
+		<Grid Margin="128,0,136,0" Grid.Row="4" VerticalAlignment="Bottom" Height="32">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Image HorizontalAlignment="Left" Width="32" Source="sign-out.png" Stretch="Fill" Margin="8,0,0,0">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseDown">
+						<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Screen_1"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Image>
+			<TextBlock Margin="46.043,0,0,1.023" Style="{StaticResource TextBlock-Sketch}" FontFamily="Fonts/#Segoe Marker" FontSize="26.667" FontWeight="Bold" Foreground="#F0EFF4F5" Text="Выйти" d:LayoutOverrides="Height">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseDown">
+						<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Screen_1"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</TextBlock>
+		</Grid>
+		<TextBlock Margin="72,0,0,0.2" Style="{StaticResource TextBlock-Sketch}" FontFamily="Fonts/#Segoe Marker" FontSize="26.667" FontWeight="Bold" Foreground="#F0EFF4F5" Text="Изменение данных" HorizontalAlignment="Left" Width="256" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Grid.Row="2">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform AngleY="0.122"/>
+					<RotateTransform/>
+					<TranslateTransform Y="0.265"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<TextBlock Margin="64,0,0,1.223" Style="{StaticResource TextBlock-Sketch}" FontFamily="Fonts/#Segoe Marker" FontSize="26.667" FontWeight="Bold" Foreground="#F0EFF4F5" Text="Добавление данных" HorizontalAlignment="Left" Width="272" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Grid.Row="1">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Screen_1_3"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform AngleY="0.122"/>
+					<RotateTransform/>
+					<TranslateTransform Y="0.265"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<Image HorizontalAlignment="Left" Margin="144,0,0,0" Width="32" Grid.Row="5" Source="facebook.png" Stretch="Fill" Height="32" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+		<Image HorizontalAlignment="Right" Margin="0,0,144,0" Width="32" Grid.Row="5" Source="instagram.png" Stretch="Fill" Height="32" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+		<TextBlock Margin="104,0,0,1.023" Style="{StaticResource TextBlock-Sketch}" FontFamily="Fonts/#Segoe Marker" FontSize="26.667" FontWeight="Bold" Foreground="#F0EFF4F5" Text="Поиск данных" HorizontalAlignment="Left" Width="192" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform AngleY="0.122"/>
+					<RotateTransform/>
+					<TranslateTransform Y="0.265"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+	</Grid>
+</UserControl>

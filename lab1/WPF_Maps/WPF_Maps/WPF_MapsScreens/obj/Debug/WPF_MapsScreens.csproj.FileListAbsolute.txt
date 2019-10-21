@@ -1,0 +1,26 @@
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\bin\Debug\WPF_Maps.Screens.dll
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\bin\Debug\WPF_Maps.Screens.pdb
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\ResolveAssemblyReference.cache
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Main.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\SketchStyles.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Main.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\WPF_Maps.Screens_MarkupCompile.cache
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\WPF_Maps.Screens.g.resources
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\WPF_Maps.Screens.dll
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\WPF_Maps.Screens.pdb
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Navbar.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Navbar.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\WPF_Maps.Screens_MarkupCompile.lref
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Menu.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Change.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Search.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Update.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Menu.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\ControlMenu.g.cs
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Change.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\ControlMenu.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Search.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Update.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Copy of SignIn.baml
+E:\ВУЗ\5 семестр\ТРПЗ-2\lab1\WPF_Maps\WPF_Maps\WPF_MapsScreens\obj\Debug\Copy of SignIn.g.cs

@@ -1,0 +1,43 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:WPF_MapsScreens" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_1_3_Name"
+	x:Class="WPF_MapsScreens.Copy_of_Update"
+	Width="400" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="{DynamicResource BaseBackground-Sketch}">
+		<Image Margin="24,80,286,400" Width="90" Height="120" Source="Programmyi-dlya-sozdaniya-avatarok.png" Stretch="Fill"/>
+		<TextBlock Margin="126.043,88,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Text="Имя:" HorizontalAlignment="Left" FontSize="18.667" Width="73.957" d:LayoutOverrides="HorizontalAlignment"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,88,24,0" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Top" TextWrapping="Wrap" Width="152" Height="19.757" Background="#FF181212" FontSize="18.667" FontFamily="Fonts/#Segoe Marker" Foreground="#FF6FF0D9" FontWeight="Bold"/>
+		<TextBlock HorizontalAlignment="Left" Margin="126.043,132.243,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Width="81.957" FontSize="18.667" Text="Фамилия:"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,132.243,24,0" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Top" Width="152" Height="19.757" TextWrapping="Wrap" Background="#FF181212" Foreground="#FF6FF0D9" FontSize="18.667" FontFamily="Fonts/#Segoe Marker" FontWeight="Bold"/>
+		<TextBlock HorizontalAlignment="Left" Margin="126.043,180.243,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Width="81.957" FontSize="18.667" Text="Отчество:"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,180.243,24,0" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Top" Width="152" Height="19.757" TextWrapping="Wrap" Background="#FF181212" FontSize="18.667" FontFamily="Fonts/#Segoe Marker" FontWeight="Bold" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="28.086,224,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Width="139.914" FontSize="18.667" Text="Дата рождения:" d:LayoutOverrides="HorizontalAlignment" FontFamily="Fonts/#Segoe Marker"/>
+		<TextBox Margin="172,225.926,76,0" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Top" Height="19.757" TextWrapping="Wrap" Background="#FF181212" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="28.086,264,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Width="40" FontSize="18.667" Text="Пол:" FontFamily="Fonts/#Segoe Marker" d:LayoutOverrides="HorizontalAlignment"/>
+		<CheckBox HorizontalAlignment="Left" Margin="90,265.147,0,0" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Top" Content="CheckBox" Width="24" Height="24" Background="#FF181212" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="242,264,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Width="82" FontSize="18.667" Text="женский" FontFamily="Fonts/#Segoe Marker"/>
+		<CheckBox HorizontalAlignment="Right" Margin="0,265.147,160,0" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Top" Width="24" Height="24" Content="CheckBox" Background="#FF181212" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="126.043,265.147,0,0" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Top" Width="82" FontSize="18.667" Text="мужской" FontFamily="Fonts/#Segoe Marker"/>
+		<TextBlock HorizontalAlignment="Left" Margin="28.086,0,0,271.999" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" Width="139.914" FontSize="18.667" Text="Страна:" FontFamily="Fonts/#Segoe Marker" d:LayoutOverrides="HorizontalAlignment"/>
+		<TextBox Margin="112,0,76,271.999" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Bottom" Height="19.757" TextWrapping="Wrap" Background="#FF181212" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="28.086,0,0,228.243" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" Width="139.914" FontSize="18.667" Text="Город:" FontFamily="Fonts/#Segoe Marker" d:LayoutOverrides="HorizontalAlignment"/>
+		<TextBox Margin="112,0,76,228.243" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Bottom" Height="19.757" TextWrapping="Wrap" Background="#FF181212" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="28.086,0,0,184" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" Width="139.914" FontSize="18.667" Text="Улица:" FontFamily="Fonts/#Segoe Marker" d:LayoutOverrides="HorizontalAlignment"/>
+		<TextBox Margin="112,0,76,184" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Bottom" Height="19.757" TextWrapping="Wrap" Background="#FF181212" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF6FF0D9"/>
+		<TextBlock HorizontalAlignment="Left" Margin="28.086,0,0,144" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" Width="151.914" FontSize="18.667" Text="Номер телефона:" FontFamily="Fonts/#Segoe Marker" d:LayoutOverrides="HorizontalAlignment"/>
+		<TextBox Margin="184,0,76,144" Style="{StaticResource BasicTextBox-Sketch}" VerticalAlignment="Bottom" Height="19.757" TextWrapping="Wrap" Background="#FF181212" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF6FF0D9"/>
+		<Button Margin="144,0,145,64" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Content="Изменить" Height="47.999" Background="#FF6FF0D9" FontWeight="Bold">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<local:Navbar Margin="21.913,24,24,0" VerticalAlignment="Top" Height="32" d:IsPrototypingComposition="True"/>
+	</Grid>
+</UserControl>

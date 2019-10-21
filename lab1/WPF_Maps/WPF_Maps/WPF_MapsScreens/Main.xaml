@@ -1,0 +1,56 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="SignIn"
+	x:Class="WPF_MapsScreens.Screen_1"
+	Width="400" Height="600">
+
+	<Grid x:Name="LayoutRoot" Background="{DynamicResource BaseBackground-Sketch}">
+		<Rectangle Fill="{StaticResource BaseBackground-Sketch}" Stroke="Black"/>
+		<Button BorderBrush="#FF58D7C0" Background="#FF6FF0D9" Margin="120,0,120,80" Style="{StaticResource Button-Sketch}" VerticalAlignment="Bottom" Height="40" Content="Войти" FontFamily="Adobe Caslon Pro Bold" FontSize="21.333" Foreground="White" RenderTransformOrigin="0.5,0.5">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Canvas Margin="32,104,40,0" VerticalAlignment="Top" Height="88">
+			<TextBlock HorizontalAlignment="Stretch" Style="{StaticResource TitleCenter-Sketch}" Width="320" Height="88" FontFamily="Fonts/#Segoe Marker" FontSize="96" FontWeight="Bold" Foreground="#FF6FF0D9" Canvas.Top="-12"><Run Text="P"/><Run Text="EOPLE"/></TextBlock>
+			<TextBlock HorizontalAlignment="Stretch" Style="{StaticResource TitleCenter-Sketch}" Width="320" Height="88" FontFamily="Fonts/#Segoe Marker" FontSize="96" FontWeight="Bold" Foreground="#FFFCFCFC" Canvas.Left="8" Canvas.Top="-8"><Run Text="P"/><Run Text="EOPLE"/></TextBlock>
+		</Canvas>
+		<TextBox Margin="184,0,40,176.04" Style="{StaticResource ComboBoxEditableTextBox-Sketch}" VerticalAlignment="Bottom" Height="23.96" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF4AEDD0" RenderTransformOrigin="0.82,-0.648" TextWrapping="Wrap">
+			<TextBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-0.532"/>
+					<TranslateTransform X="-0.259" Y="-0.522"/>
+				</TransformGroup>
+			</TextBox.RenderTransform>
+		</TextBox>
+		<TextBox Margin="184,0,40,216.04" Style="{StaticResource ComboBoxEditableTextBox-Sketch}" VerticalAlignment="Bottom" Height="23.96" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF4AEDD0" RenderTransformOrigin="0.82,-0.648" TextWrapping="Wrap">
+			<TextBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-0.532"/>
+					<TranslateTransform X="-0.259" Y="-0.522"/>
+				</TransformGroup>
+			</TextBox.RenderTransform>
+		</TextBox>
+		<TextBlock HorizontalAlignment="Left" Margin="64,0,0,218.316" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF1CEBCD" Text="Логин:"/>
+		<TextBlock HorizontalAlignment="Left" Margin="64,0,0,178.316" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" FontFamily="Fonts/#Segoe Marker" FontSize="18.667" FontWeight="Bold" Foreground="#FF1CEBCD" Text="Пароль:"/>
+		<TextBlock Margin="80,0,88,8" VerticalAlignment="Bottom" Height="56" FontFamily="Segoe UI Black" FontSize="10.667" Foreground="#FF6E6B6B" TextAlignment="Center" TextWrapping="Wrap"><Run Text="Вход в"/><Run Text=" учетно"/><Run Text="тную"/><Run Text=" запис"/><Run Text="ь"/><Run Text=" означает, вы"/><Run Text=" "/><Run Text="п"/><Run Text="ринимаете что Пользовательское соглашение и ПОЛОЖЕНИЕ о конфиденциальности"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="97.266,0,0,136.08" VerticalAlignment="Bottom" Width="80" Height="16" Text="Нет аккаунта," TextWrapping="Wrap"/>
+		<TextBlock HorizontalAlignment="Right" Margin="0,0,88,136" Style="{StaticResource TextBlock-Sketch}" VerticalAlignment="Bottom" FontFamily="Fonts/#Segoe Marker" FontSize="13.333" FontWeight="Bold" Foreground="#FF1CEBCD" Text="зарегистрироваться">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="WPF_MapsScreens.Copy_of_SignIn"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</TextBlock>
+	</Grid>
+</UserControl>
