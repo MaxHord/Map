@@ -60,6 +60,7 @@
     <Compile Include="Country.cs" />
     <Compile Include="Flat.cs" />
     <Compile Include="House.cs" />
+    <Compile Include="Reside.cs" />
     <Compile Include="Street.cs" />
     <Compile Include="User.cs" />
     <Page Include="MainWindow.xaml">

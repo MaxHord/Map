@@ -14,6 +14,7 @@ namespace Map
         private string address;
         private string login;
         private string password;
+        private string role;
 
         public User()
         {
@@ -21,36 +22,6 @@ namespace Map
         }
 
         ~User()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void getName()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void getSurname()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void setName()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void setSurname()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void getAddress()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void setAddress()
         {
             throw new System.NotImplementedException();
         }

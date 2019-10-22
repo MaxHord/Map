@@ -30,15 +30,8 @@
   <Class Name="Map.User">
     <Position X="13.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAgQAAAAEAEAAAAAAIEAABAAAAEAgQAEAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAQAAAAAAEABAAAAIEAAAAAAAAAgAAEAA=</HashCode>
       <FileName>User.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Map.Admin">
-    <Position X="11.5" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Admin.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Map.House">
@@ -54,12 +47,9 @@
   <Class Name="Map.Flat">
     <Position X="11" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Flat.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Field Name="listUser" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Map.Street">
     <Position X="6.75" Y="0.5" Width="1.5" />
@@ -90,6 +80,17 @@
     <ShowAsCollectionAssociation>
       <Field Name="listCitys" />
     </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Map.Reside">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Reside.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Flat" />
+      <Property Name="User" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -8,7 +8,6 @@ namespace Map
     public class Flat
     {
         private int number;
-        private List<User> listUser;
         private int countRooms;
 
         public Flat()
