@@ -30,15 +30,15 @@
   <Class Name="Map.User">
     <Position X="13.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAQAAAAAAEABAAAAIEAAAAAAAAAgAAEAA=</HashCode>
-      <FileName>User.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Map.House">
     <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
-      <FileName>House.cs</FileName>
+      <FileName>Model\House.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="listFlats" />
@@ -48,14 +48,14 @@
     <Position X="11" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
-      <FileName>Flat.cs</FileName>
+      <FileName>Model\Flat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Map.Street">
     <Position X="6.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Street.cs</FileName>
+      <FileName>Model\Street.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="listHouses" />
@@ -65,7 +65,7 @@
     <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAA=</HashCode>
-      <FileName>City.cs</FileName>
+      <FileName>Model\City.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="listSreets" />
@@ -75,21 +75,35 @@
     <Position X="4.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Country.cs</FileName>
+      <FileName>Model\Country.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="listCitys" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Map.Reside">
-    <Position X="10.75" Y="3" Width="1.5" />
+  <Class Name="Map.Model.Resident">
+    <Position X="14" Y="2.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Map.Model.Resident.GenderList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Resident.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAABAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
-      <FileName>Reside.cs</FileName>
+      <HashCode>AAAAAAAAACAAAACAAEAAAAQAAAAAAAAAAAAAIAAAAAg=</HashCode>
+      <FileName>Model\Resident.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map.Model.Reside">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Reside.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Flat" />
-      <Property Name="User" />
+      <Property Name="Resident" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />

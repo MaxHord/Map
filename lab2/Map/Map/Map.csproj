@@ -55,26 +55,91 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Admin.cs" />
-    <Compile Include="City.cs" />
-    <Compile Include="Country.cs" />
-    <Compile Include="Flat.cs" />
-    <Compile Include="House.cs" />
-    <Compile Include="Reside.cs" />
-    <Compile Include="Street.cs" />
-    <Compile Include="User.cs" />
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="Model\City.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\Flat.cs" />
+    <Compile Include="Model\House.cs" />
+    <Compile Include="Model\RefreshBox.cs" />
+    <Compile Include="Model\Repositories.cs" />
+    <Compile Include="Model\Reside.cs" />
+    <Compile Include="Model\Resident.cs" />
+    <Compile Include="Model\Street.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserCreate.cs" />
+    <Compile Include="Views\Admin\AdminCity.xaml.cs">
+      <DependentUpon>AdminCity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminFlat.xaml.cs">
+      <DependentUpon>AdminFlat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminFlatToResident.xaml.cs">
+      <DependentUpon>AdminFlatToResident.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminHouse.xaml.cs">
+      <DependentUpon>AdminHouse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminMenu.xaml.cs">
+      <DependentUpon>AdminMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminCountry.xaml.cs">
+      <DependentUpon>AdminCountry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminResident.xaml.cs">
+      <DependentUpon>AdminResident.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AdminStreet.xaml.cs">
+      <DependentUpon>AdminStreet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\General\LogIn.xaml.cs">
+      <DependentUpon>LogIn.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Views\General\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\Admin\AdminCity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminFlat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminFlatToResident.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminHouse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminCountry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminResident.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\AdminStreet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\General\LogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\General\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,5 +168,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

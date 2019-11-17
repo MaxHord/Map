@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\ВУЗ\5 семестр\ТРПЗ-2\Map\lab2\Map\Map\App.xaml
-11151548125
+10-1940977271
 
-17958779873
+29-2119540967
 131569487696
-MainWindow.xaml;
+Views\Admin\AdminCity.xaml;Views\Admin\AdminFlat.xaml;Views\Admin\AdminFlatToResident.xaml;Views\Admin\AdminHouse.xaml;Views\Admin\AdminMenu.xaml;Views\Admin\AdminCountry.xaml;Views\Admin\AdminResident.xaml;Views\Admin\AdminStreet.xaml;Views\General\LogIn.xaml;Views\General\Registration.xaml;
 
 False
 

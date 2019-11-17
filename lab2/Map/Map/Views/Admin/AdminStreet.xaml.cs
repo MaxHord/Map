@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Map
+namespace Map.Views.Admin
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AdminStreet.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AdminStreet : Window
     {
-        public MainWindow()
+        public AdminStreet()
         {
             InitializeComponent();
         }
