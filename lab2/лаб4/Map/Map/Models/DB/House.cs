@@ -8,9 +8,9 @@ namespace Map.Models.DB
     public class House
     {
         public int Id { get; set; }
-        public int Number { get; set; }
+        public string Number { get; set; }
         public int StreetId { get; set; }
-        public Street street { get; set; }
+        public Street Street { get; set; }
         public virtual List<Flat> ListFlats { get; set; }
 
     }

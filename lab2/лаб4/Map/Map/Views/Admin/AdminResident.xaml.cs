@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Map.ViewModels.Admin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,9 @@ namespace Map.Views.Admin
         public AdminResident()
         {
             InitializeComponent();
+            AdminResidentVM residentModel = new AdminResidentVM();
+            DataContext = residentModel;
+            residentModel.ClosingRequest += (sender, e) => Close();
         }
     }
 }

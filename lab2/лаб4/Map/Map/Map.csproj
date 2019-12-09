@@ -94,7 +94,11 @@
     <Compile Include="Models\Repositories\UserRepository.cs" />
     <Compile Include="ViewModels\Admin\AdminCityVM.cs" />
     <Compile Include="ViewModels\Admin\AdminCountryVM.cs" />
+    <Compile Include="ViewModels\Admin\AdminFlatVM.cs" />
+    <Compile Include="ViewModels\Admin\AdminHousesVM.cs" />
     <Compile Include="ViewModels\Admin\AdminMenuVM.cs" />
+    <Compile Include="ViewModels\Admin\AdminResidentVM.cs" />
+    <Compile Include="ViewModels\Admin\AdminResideVM.cs" />
     <Compile Include="ViewModels\Admin\AdminStreetVM.cs" />
     <Compile Include="ViewModels\General\LogInViewModel.cs" />
     <Compile Include="ViewModels\General\RegistrationViewModel.cs" />
@@ -206,6 +210,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resource\Style\" />
+    <Folder Include="ViewModels\User\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

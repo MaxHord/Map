@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Map.ViewModels.Admin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace Map.Views.Admin
 {
-    /// <summary>
-    /// Логика взаимодействия для AdminFlatToResident.xaml
-    /// </summary>
-    public partial class AdminFlatToResident : Window
+     public partial class AdminFlatToResident : Window
     {
         public AdminFlatToResident()
         {
             InitializeComponent();
+            AdminResideVM residentModel = new AdminResideVM();
+            DataContext = residentModel;
+            residentModel.ClosingRequest += (sender, e) => Close();
         }
     }
 }

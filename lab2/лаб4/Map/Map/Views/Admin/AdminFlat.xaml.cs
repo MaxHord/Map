@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Map.ViewModels.Admin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,9 @@ namespace Map.Views.Admin
         public AdminFlat()
         {
             InitializeComponent();
+            AdminFlatVM flatModel = new AdminFlatVM();
+            DataContext = flatModel;
+            flatModel.ClosingRequest += (sender, e) => Close();
         }
     }
 }

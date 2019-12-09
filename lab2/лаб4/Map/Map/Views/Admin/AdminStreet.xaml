@@ -66,11 +66,18 @@
         <TextBox Name="editStreetName" Text="{Binding EditStreetName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="26.127" Margin="157.947,382.533,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182.4" BorderBrush="#FF0EEDA9" TextAlignment="Center" Opacity="0.6"/>
         <Button  Command="{Binding DeleteStreetCommand}" Content="Удалить" HorizontalAlignment="Center" Margin="64.365,432.657,207.568,0" VerticalAlignment="Top" Width="96.667" Height="28.667" BorderBrush="#FF0EEDA9" Background="#FFDDDDDD" Foreground="Black" FontFamily="Galaxie Polaris" FontSize="14"/>
         <Button Command="{Binding EditStreetCommand}" Content="Изменить" HorizontalAlignment="Center" Margin="217.432,432.657,54.501,0" VerticalAlignment="Top" Width="96.667" Height="28.667" BorderBrush="#FF0EEDA9" Background="#FFDDDDDD" Foreground="Black" FontFamily="Galaxie Polaris" FontSize="14"/>
-        <Button Command="{Binding ClosePageCommand}" Content="Выход" HorizontalAlignment="Center" Margin="141.032,481.724,130.901,0" VerticalAlignment="Top" Width="96.667" Height="28.667" BorderBrush="#FF0EEDA9" Background="#FFDDDDDD" Foreground="Black" FontFamily="Galaxie Polaris" FontSize="14"/>
+        <Button Command="{Binding ClosePageCommand}" Content="Выход" HorizontalAlignment="Center" Margin="141.032,481.724,130.901,0" VerticalAlignment="Top" Width="96.667" Height="28.667" BorderBrush="#FF0EEDA9" Background="#FFDDDDDD" Foreground="Black" FontFamily="Galaxie Polaris" FontSize="14">
+        </Button>
         <Label Content="Выберите город:" HorizontalAlignment="Left" Margin="34,290,0,0" VerticalAlignment="Top" FontFamily="Galaxie Polaris" />
-        <ComboBox Name="streetSelector" ItemsSource="{Binding Streets, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedStreet, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="158,337,0,0" VerticalAlignment="Top" Width="182" Height="26" BorderBrush="#FF0EEDA9" FontFamily="Galaxie Polaris" FontSize="14"/>
+        <ComboBox Name="streetSelector" ItemsSource="{Binding Streets, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedStreet, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="158,337,0,0" VerticalAlignment="Top" Width="182" Height="26" BorderBrush="#FF0EEDA9" FontFamily="Galaxie Polaris" FontSize="14">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding SelectStreetCommand}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
         <Label Content="Выберите город:" HorizontalAlignment="Left" Margin="33.596,111.258,0,0" VerticalAlignment="Top" FontFamily="Galaxie Polaris" />
-        <ComboBox Name="citySelector1" ItemsSource="{Binding Cities, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedCity, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="157.947,111.259,0,0" VerticalAlignment="Top" Width="182.4" Height="26.127" BorderBrush="#FF0EEDA9" FontFamily="Galaxie Polaris" FontSize="14">
+        <ComboBox Name="citySelector1" ItemsSource="{Binding Cities, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedCity, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="157.947,111.259,0,0" VerticalAlignment="Top" Width="182.4" Height="26.127" BorderBrush="#FF0EEDA9" FontFamily="Galaxie Polaris" FontSize="14" SelectionChanged="citySelector1_SelectionChanged">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction Command="{Binding SelectCityCommand}"/>

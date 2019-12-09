@@ -24,9 +24,9 @@ namespace Map.Views.Admin
         public AdminCountry()
         {
             InitializeComponent();
-            InitializeComponent();
             AdminCountryVM adminCountryVM = new AdminCountryVM();
             DataContext = adminCountryVM;
+            adminCountryVM.ClosingRequest += (sender, e) => Close();
         }
 
     }

@@ -9,9 +9,9 @@ namespace Map.Models.DB
     {
         public int Id { get; set; }
         public int FlatId { get; set; }
-        public Flat flat { get; set; }
+        public Flat Flat { get; set; }
         public int ResidentId { get; set; }
-        public Resident resident { get; set; }
+        public Resident Resident { get; set; }
 
         public Reside()
         {

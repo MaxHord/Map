@@ -12,8 +12,8 @@ namespace Map.Models.DB
         public string Name { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-        public enum GenderList { male, female}
-        public GenderList Gender { get; set; }
+        public enum GenderList { мужчина, женщина}
+        public GenderList? Gender { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
         public virtual List<Reside> Reside { get; set; }

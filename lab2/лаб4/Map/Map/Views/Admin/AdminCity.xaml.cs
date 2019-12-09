@@ -25,6 +25,7 @@ namespace Map.Views.Admin
             InitializeComponent();
             AdminCityVM adminVM = new AdminCityVM();
             DataContext = adminVM;
+            adminVM.ClosingRequest += (sender, e) => Close();
         }
     }
 }

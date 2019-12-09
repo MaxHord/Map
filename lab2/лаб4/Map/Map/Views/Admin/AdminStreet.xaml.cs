@@ -25,6 +25,12 @@ namespace Map.Views.Admin
             InitializeComponent();
             AdminStreetVM viewModel = new AdminStreetVM();
             DataContext = viewModel;
+            viewModel.ClosingRequest += (sender, e) => Close();
+        }
+
+        private void citySelector1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
